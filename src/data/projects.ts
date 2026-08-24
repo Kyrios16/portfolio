@@ -1,37 +1,66 @@
 import { Project } from "@/types";
 
-// These are real systems built at Wave Money / METATEAM, described as case
-// studies since the underlying code is proprietary (no public repo/demo).
+// These are real systems built at Wave Money, described as case studies
+// since the underlying code is proprietary (no public repo/demo).
 // Swap in your own open-source projects with `github` / `liveDemo` links
 // whenever you have them — see README for instructions.
 export const projects: Project[] = [
+  {
+    title: "Merchant CMS Platform",
+    description:
+      "Heavily customized headless CMS (Strapi) powering merchant banners, mini-apps, biller content, feature toggles, and the referral program across every Wave Money app — the most actively developed backend service in the org.",
+    technologies: ["Strapi", "Node.js", "PostgreSQL", "Redis", "AWS S3"],
+    category: "backend",
+    featured: true,
+  },
+  {
+    title: "Refer & Earn Program",
+    description:
+      "Referral platform with referee tracking, commission, leaderboards, and social sharing, built on Next.js and integrated with an in-house JS SDK that bridges native app capabilities into WebView mini-apps.",
+    technologies: ["Next.js", "React 19", "TypeScript", "TanStack Query", "Tailwind CSS"],
+    category: "web",
+    featured: true,
+  },
+  {
+    title: "KYC Verification Portal",
+    description:
+      "Rebuilt admin portal for Know-Your-Customer identity verification (WaveID), with biometric document checks, RBAC, and falsified-selfie fraud detection tooling for the compliance team.",
+    technologies: ["Laravel 11", "Vue.js", "Vite", "Sentry"],
+    category: "web",
+  },
   {
     title: "Partner API Gateway",
     description:
       "Secure API Gateway standardizing integrations for 15+ third-party partners using HMAC-SHA256 request signing, cutting partner onboarding time by roughly 30%.",
     technologies: ["Laravel", "PHP", "HMAC-SHA256", "Redis", "PostgreSQL"],
     category: "backend",
-    featured: true,
   },
   {
-    title: "KYC Verification Portal",
+    title: "Internal Ops & Utilities Platform",
     description:
-      "Biometric document verification portal with role-based access control, built for a compliance team processing high daily verification volumes.",
-    technologies: ["Laravel", "React 18", "TypeScript", "Inertia.js", "RBAC"],
-    category: "web",
-  },
-  {
-    title: "Multi-Currency Settlement Engine",
-    description:
-      "Asynchronous processing engine handling MMK, USD, THB, and SGD conversions with real-time settlement accuracy for cross-border transactions.",
-    technologies: ["Laravel", "PHP", "Async Workflows", "Oracle"],
+      "Back-office platform covering audit logging, transaction auto-sweep reconciliation, circuit breakers, fraud mitigation, gift cards, and telecom integrations for internal payments and compliance teams.",
+    technologies: ["Laravel", "Inertia.js", "React 18", "PostgreSQL", "Redis Cluster"],
     category: "backend",
   },
   {
-    title: "Real-Time Fraud Detection",
+    title: "Channel Portal",
     description:
-      "Redis-backed mechanism that flags high-risk transactions in real time, contributing to a measurable drop in suspicious activity incidents.",
-    technologies: ["Redis", "PHP", "Laravel"],
+      "Sales & Distribution workflow system for internal partner and channel operations — one of the longest-running, most actively maintained systems in the portfolio.",
+    technologies: ["Laravel", "Vue.js", "Bootstrap-Vue", "MySQL"],
+    category: "web",
+  },
+  {
+    title: "Online Biller Webview",
+    description:
+      "WebView templates powering in-app bill payments (utilities, telecom, gift cards) inside the WavePay mobile app, integrating with multiple third-party biller providers.",
+    technologies: ["Laravel", "Vue.js", "Jest", "MSW"],
+    category: "web",
+  },
+  {
+    title: "WaveMoney JS SDK",
+    description:
+      "TypeScript bridge SDK embedded in in-app WebViews, exposing native-like capabilities (auth, payments, device info, sharing, analytics) to web-based mini-apps across the super-app ecosystem.",
+    technologies: ["TypeScript", "Webpack", "Jest", "TypeDoc"],
     category: "backend",
   },
   {
@@ -40,12 +69,5 @@ export const projects: Project[] = [
       "Jenkins + Docker deployment pipeline that cut deployment failures by ~25% and reduced release cycles from days to hours.",
     technologies: ["Jenkins", "Docker", "Git", "Laravel Pint", "Husky"],
     category: "devops",
-  },
-  {
-    title: "Internal Operations Dashboards",
-    description:
-      "Admin dashboards and operational webviews that replaced manual reporting workflows for internal teams.",
-    technologies: ["React 18", "TypeScript", "Inertia.js", "Tailwind CSS"],
-    category: "web",
   },
 ];
