@@ -1,9 +1,5 @@
 import { Project } from "@/types";
 
-// These are real systems built at Wave Money, described as case studies
-// since the underlying code is proprietary (no public repo/demo).
-// Swap in your own open-source projects with `github` / `liveDemo` links
-// whenever you have them — see README for instructions.
 export const projects: Project[] = [
   {
     title: "Merchant CMS Platform",
