@@ -2,14 +2,6 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    title: "Merchant CMS Platform",
-    description:
-      "Heavily customized headless CMS (Strapi) powering merchant banners, mini-apps, biller content, feature toggles, and the referral program across every Wave Money app — the most actively developed backend service in the org.",
-    technologies: ["Strapi", "Node.js", "PostgreSQL", "Redis", "AWS S3"],
-    category: "backend",
-    featured: true,
-  },
-  {
     title: "Refer & Earn Program",
     description:
       "Referral platform with referee tracking, commission, leaderboards, and social sharing, built on Next.js and integrated with an in-house JS SDK that bridges native app capabilities into WebView mini-apps.",
@@ -18,11 +10,18 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "KYC Verification Portal",
+    title: "KYC Portal",
     description:
       "Rebuilt admin portal for Know-Your-Customer identity verification (WaveID), with biometric document checks, RBAC, and falsified-selfie fraud detection tooling for the compliance team.",
     technologies: ["Laravel 11", "Vue.js", "Vite", "Sentry"],
     category: "web",
+  },
+  {
+    title: "WaveMoney JS SDK",
+    description:
+      "TypeScript bridge SDK embedded in in-app WebViews, exposing native-like capabilities (auth, payments, device info, sharing, analytics) to web-based mini-apps across the super-app ecosystem.",
+    technologies: ["TypeScript", "Webpack", "Jest", "TypeDoc"],
+    category: "backend",
   },
   {
     title: "Partner API Gateway",
@@ -53,11 +52,12 @@ export const projects: Project[] = [
     category: "web",
   },
   {
-    title: "WaveMoney JS SDK",
+    title: "Merchant CMS Platform",
     description:
-      "TypeScript bridge SDK embedded in in-app WebViews, exposing native-like capabilities (auth, payments, device info, sharing, analytics) to web-based mini-apps across the super-app ecosystem.",
-    technologies: ["TypeScript", "Webpack", "Jest", "TypeDoc"],
+      "Heavily customized headless CMS (Strapi) powering merchant banners, mini-apps, biller content, feature toggles, and the referral program across every Wave Money app — the most actively developed backend service in the org.",
+    technologies: ["Strapi", "Node.js", "PostgreSQL", "Redis", "AWS S3"],
     category: "backend",
+    featured: true,
   },
   {
     title: "CI/CD Pipeline Overhaul",

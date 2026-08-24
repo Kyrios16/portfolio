@@ -14,7 +14,7 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Frontend",
-    items: ["React 18", "Vue.js", "Node.js", "Inertia.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+    items: ["React", "Vue.js", "Node.js", "Inertia.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "TanStack Query"],
   },
   {
     category: "Data & Storage",

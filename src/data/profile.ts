@@ -26,7 +26,7 @@ export const profile: Profile = {
   location: "Yangon, Myanmar",
   email: "kaungkhantnaing.leo@gmail.com",
   phone: "09400027943",
-  github: "https://github.com/Kyrios16",
+  github: "https://github.com/kaungkhantnaingLeo",
   linkedin: "https://linkedin.com/in/kaung-khant-naing-92620a249",
   resumeUrl: "/resume.pdf",
 };
