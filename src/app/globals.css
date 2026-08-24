@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base-bg text-ink font-body antialiased;
+}
+
+::selection {
+  @apply bg-signal-amber/30 text-ink;
+}
+
+:focus-visible {
+  outline: 2px solid theme("colors.signal.amber");
+  outline-offset: 3px;
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(circle, #222939 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+}
+
+.eyebrow {
+  @apply font-mono text-xs uppercase tracking-[0.2em] text-signal-amber;
+}
